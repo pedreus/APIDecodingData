@@ -16,6 +16,16 @@
 		478EF499295A0F1000FF8113 /* APIDecodingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF498295A0F1000FF8113 /* APIDecodingDataTests.swift */; };
 		478EF4A3295A0F1000FF8113 /* APIDecodingDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4A2295A0F1000FF8113 /* APIDecodingDataUITests.swift */; };
 		478EF4A5295A0F1000FF8113 /* APIDecodingDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4A4295A0F1000FF8113 /* APIDecodingDataUITestsLaunchTests.swift */; };
+		478EF4B4295A117400FF8113 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B3295A117400FF8113 /* Constants.swift */; };
+		478EF4B5295A117400FF8113 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B3295A117400FF8113 /* Constants.swift */; };
+		478EF4B7295A120E00FF8113 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B6295A120E00FF8113 /* Response.swift */; };
+		478EF4B8295A120E00FF8113 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B6295A120E00FF8113 /* Response.swift */; };
+		478EF4BA295A125100FF8113 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B9295A125100FF8113 /* Weather.swift */; };
+		478EF4BB295A125100FF8113 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4B9295A125100FF8113 /* Weather.swift */; };
+		478EF4BE295A151300FF8113 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4BD295A151300FF8113 /* APIService.swift */; };
+		478EF4BF295A151300FF8113 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4BD295A151300FF8113 /* APIService.swift */; };
+		478EF4C1295A236500FF8113 /* Coordidantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4C0295A236500FF8113 /* Coordidantes.swift */; };
+		478EF4C2295A236500FF8113 /* Coordidantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478EF4C0295A236500FF8113 /* Coordidantes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,11 @@
 		478EF49E295A0F1000FF8113 /* APIDecodingDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIDecodingDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478EF4A2295A0F1000FF8113 /* APIDecodingDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodingDataUITests.swift; sourceTree = "<group>"; };
 		478EF4A4295A0F1000FF8113 /* APIDecodingDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodingDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		478EF4B3295A117400FF8113 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		478EF4B6295A120E00FF8113 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		478EF4B9295A125100FF8113 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		478EF4BD295A151300FF8113 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		478EF4C0295A236500FF8113 /* Coordidantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordidantes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +114,9 @@
 		478EF480295A0F0E00FF8113 /* APIDecodingData */ = {
 			isa = PBXGroup;
 			children = (
+				478EF4BC295A12D500FF8113 /* Services */,
+				478EF4B2295A113D00FF8113 /* Constants */,
+				478EF4B1295A112F00FF8113 /* Models */,
 				478EF481295A0F0E00FF8113 /* AppDelegate.swift */,
 				478EF483295A0F0E00FF8113 /* SceneDelegate.swift */,
 				478EF485295A0F0E00FF8113 /* ViewController.swift */,
@@ -125,6 +143,32 @@
 				478EF4A4295A0F1000FF8113 /* APIDecodingDataUITestsLaunchTests.swift */,
 			);
 			path = APIDecodingDataUITests;
+			sourceTree = "<group>";
+		};
+		478EF4B1295A112F00FF8113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				478EF4B6295A120E00FF8113 /* Response.swift */,
+				478EF4B9295A125100FF8113 /* Weather.swift */,
+				478EF4C0295A236500FF8113 /* Coordidantes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		478EF4B2295A113D00FF8113 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				478EF4B3295A117400FF8113 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		478EF4BC295A12D500FF8113 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				478EF4BD295A151300FF8113 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				478EF486295A0F0E00FF8113 /* ViewController.swift in Sources */,
+				478EF4BE295A151300FF8113 /* APIService.swift in Sources */,
 				478EF482295A0F0E00FF8113 /* AppDelegate.swift in Sources */,
 				478EF484295A0F0E00FF8113 /* SceneDelegate.swift in Sources */,
+				478EF4C1295A236500FF8113 /* Coordidantes.swift in Sources */,
+				478EF4B4295A117400FF8113 /* Constants.swift in Sources */,
+				478EF4BA295A125100FF8113 /* Weather.swift in Sources */,
+				478EF4B7295A120E00FF8113 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478EF4BB295A125100FF8113 /* Weather.swift in Sources */,
+				478EF4BF295A151300FF8113 /* APIService.swift in Sources */,
+				478EF4C2295A236500FF8113 /* Coordidantes.swift in Sources */,
 				478EF499295A0F1000FF8113 /* APIDecodingDataTests.swift in Sources */,
+				478EF4B8295A120E00FF8113 /* Response.swift in Sources */,
+				478EF4B5295A117400FF8113 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +499,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +528,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
