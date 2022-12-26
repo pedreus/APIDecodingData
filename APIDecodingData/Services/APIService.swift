@@ -16,19 +16,20 @@ struct ResponseService {
     }
 
     private let urlString: String
-    private let apiKey: String
+    private let apiKey: String?
     private var url: URL? {
+        guard let apiKey = apiKey else { return nil }
         let weatherResponse = String(format: ResponseConstants.weatherResponse, ResponseConstants.latitude, ResponseConstants.longitude)
-        let fullUrlString = urlString + weatherResponse + "&appid=" + Constants.apiKey
+        let fullUrlString = urlString + weatherResponse + "&appid=" + apiKey
         return URL(string: fullUrlString)
     }
 
-    init(urlString: String, apiKey: String) {
+    init(urlString: String, apiKey: String?) {
         self.urlString = urlString
         self.apiKey = apiKey
     }
 
-    func response(completion: @escaping (Response) -> ()) {
+    func responseWithClousure(completion: @escaping (Response) -> ()) {
         if let url = url {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
@@ -43,7 +44,15 @@ struct ResponseService {
             }
             task.resume()
         }
+    }
 
+    func responseWithAsync() async throws -> Response? {
+        if let url = url {
+            let session = URLSession.shared
+            let (data, _) = try await session.data(from: url)
+            return try JSONDecoder().decode(Response.self, from: data)
+        }
+        return nil
     }
 
 }
